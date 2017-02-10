@@ -1,0 +1,24 @@
+/*********************************common***************************************/
+*{padding:0px;margin:0px}
+li{list-style:none;}
+a{text-decoration:none;}
+.midd{width:1349px;margin:0 auto}
+/**********************************header*****************************/
+.header{width:100%;height:100px;}
+.logo{width:120px;height:100px;background:url("../img/htc-logo.png") no-repeat center 48px;float:left}
+.header-nav {height:100%;width:873px;float:left;}
+.header-nav ul{overflow:hidden;margin-top:59px}
+.header-nav ul li{width:145px;text-align:center;float:left;font-size:12px;}
+.header-nav ul li:hover{color:#a5cf4c;cursor:pointer}
+.header-right{width:240px;height:100%;float:right}
+.help-information{width:220px;height:50px;float:right;display:table;}
+.help-information ul{overflow:hidden;display:table-cell;vertical-align:middle;}
+.help-information li{float:left;color:#A5CF4C;margin:0 5px;font-size:12px;font-weight:600;display:table-cell;vertical-align:middle;}
+.help-information li div{width:4px;height:4px;border-radius:50%;background:#a5cf4c;margin:0 auto;display:inline-block}
+.header-right .search{width:240px;height:37px;float:right;border-bottom:2px solid #555}
+.header-right .search input{float:left}
+.header-right .search input[type="text"]{width:210px;height:35px;border:none;outline:none}
+.header-right .search input[type="button"]{width:25px;height:35px;border:none;outline:none;background:url("../img/magnify.png") no-repeat center center}
+.produce:after{content:"";width:0;height:0;border-style:solid;border-width:4px 4px 0px 4px;border-color:#666666 transparent transparent transparent;position:relative;top:8px;margin-left:5px}
+/********************************banner******************************/
+.banner{height:532px;width:1329px;margin:10px;background:red}

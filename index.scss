@@ -1,0 +1,63 @@
+@charset "utf-8";
+//变量
+$topheight:100px;
+$topwidth:120px;
+$logo:url("../img/htc-logo.png") no-repeat center 48px;
+$navWidth:873px;
+$navColor:#a5cf4c;
+$navliWidth:145px;
+$font-size:12px;
+$topRight:240px;
+$greencolor:#A5CF4C;
+$font-weight:600;
+$spotcolor:#fff;
+$spotcolor2:rgba(0,0,0,0.8);
+$width:1329px;
+$margin:10px;
+/*********************************common***************************************/
+*{padding:0px;margin:0px}
+li{list-style:none;}
+a{text-decoration:none;}
+.midd{width:1329px;margin:0 auto}
+/**********************************header*****************************/
+.header{width:100%;height:$topheight;}
+.logo{width:$topwidth;height:$topheight;background:$logo;float:left}
+.header-nav{height:100%;width:$navWidth;float:left;}
+.header-nav ul{overflow:hidden;margin-top:59px}
+.header-nav ul li{width:$navliWidth;text-align:center;float:left;font-size:$font-size;}
+.header-nav ul li:hover{color:$navColor;cursor:pointer}
+.header-right{width:$topRight;height:100%;float:right}
+.help-information{width:220px;height:50px;float:right;display:table;}
+.help-information ul{overflow:hidden;display:table-cell;vertical-align:middle;}
+.help-information li{float:left;color:$greencolor;margin:0 5px;font-size:$font-size;font-weight:$font-weight;display:table-cell;vertical-align:middle;}
+.help-information li div{width:4px;height:4px;border-radius:50%;background:$greencolor;margin:0 auto;display:inline-block}
+.header-right .search{width:240px;height:37px;float:right;border-bottom:2px solid #555}
+.header-right .search input{float:left}
+.header-right .search input[type="text"]{width:210px;height:35px;border:none;outline:none}
+.header-right .search input[type="button"]{width:25px;height:35px;border:none;outline:none;background:url("../img/magnify.png") no-repeat center center}
+.produce:after{content:"";width:0;height:0;border-style:solid;border-width:4px 4px 0px 4px;border-color:#666666 transparent transparent transparent;position:relative;top:8px;margin-left:5px}
+/********************************banner******************************/
+ .banner{height:532px;width:100%;}
+ .bannerbox{width:$width;overflow:hidden}
+ .bannerbox ol li{background:$spotcolor;border:1px solid $spotcolor}
+ .active{background:$spotcolor2!important}
+ .bannerbox{overflow:hidden;}
+ .left{background:url("../img/left.png") no-repeat center;}
+ .right{background:url("../img/right.png") no-repeat center;}
+/********************************imglist******************************/
+.imglist{width:$width;height:266px;padding:10px 0px}
+.youkuvideo{width:429px;height:100%;background:red;float:left}
+.boximg1{width:450px;height:100%;float:left;margin:0 10px}
+.boximg2{width:429px;height:100%;float:left}
+.boximg1 img{width:450px;height:100%}
+.boximg2 img{width:429px;height:100%}
+/********************************movie******************************/
+.movie{width:$width;height:408px;background:#dadada;padding-top:50px}
+.movie h2{font-size:34px;font-weight:900;text-align:center;line-height:36px;margin-bottom:35px}
+.video{width:330px;height:180px;margin:0 auto;position:relative;}
+.video span{display:inline-block;width:40px;height:40px;position:absolute;left:0px;right:0;top:0;bottom:0;margin:auto}
+.videoimg{width:330px;height:180px}
+.video span img{width:40px;height:40px}
+.shadow{position:absolute;left:0;top:0;width:330px;height:180px;background:rgba(0,0,0,0.6)}
+/********************************shoplist******************************/
+.shoplist{width:1329px;height:562px}
