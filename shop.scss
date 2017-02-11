@@ -1,0 +1,139 @@
+@charset "utf-8";
+//变量
+$topheight:100px;
+$topwidth:120px;
+$logo:url("../img/htc-logo.png") no-repeat center 48px;
+$navWidth:873px;
+$navColor:#a5cf4c;
+$navliWidth:145px;
+$font-size:12px;
+$topRight:240px;
+$greencolor:#A5CF4C;
+$font-weight:600;
+$spotcolor:#fff;
+$spotcolor2:rgba(0,0,0,0.8);
+$width:1329px;
+$margin:10px;
+$padding:40px 35px;
+$navbgcolor:#333;
+/*********************************common***************************************/
+*{padding:0px;margin:0px}
+li{list-style:none;}
+a{text-decoration:none;}
+.midd{width:1329px;margin:0 auto}
+.midd2{width:1140px;margin:0 auto}
+.f12{font-size:12px}
+a{color:#000}
+.active{background:#333;color:#fff}
+/**********************************header*****************************/
+.header{width:100%;height:$topheight;}
+.logo{width:$topwidth;height:$topheight;background:$logo;float:left}
+.header-nav{height:100%;width:$navWidth;float:left;}
+.header-nav ul{overflow:hidden;margin-top:59px}
+.header-nav ul li{width:$navliWidth;text-align:center;float:left;font-size:$font-size;}
+.header-nav ul li:hover{color:$navColor;cursor:pointer}
+.header-right{width:$topRight;height:100%;float:right}
+.help-information{width:220px;height:50px;float:right;display:table;}
+.help-information ul{overflow:hidden;display:table-cell;vertical-align:middle;}
+.help-information li{float:left;color:$greencolor;margin:0 5px;font-size:$font-size;font-weight:$font-weight;display:table-cell;vertical-align:middle;}
+.help-information li div{width:4px;height:4px;border-radius:50%;background:$greencolor;margin:0 auto;display:inline-block}
+.header-right .search{width:240px;height:37px;float:right;border-bottom:2px solid #555}
+.header-right .search input{float:left}
+.header-right .search input[type="text"]{width:210px;height:35px;border:none;outline:none}
+.header-right .search input[type="button"]{width:25px;height:35px;border:none;outline:none;background:url("../img/magnify.png") no-repeat center center}
+.produce:after{content:"";width:0;height:0;border-style:solid;border-width:4px 4px 0px 4px;border-color:#666666 transparent transparent transparent;position:relative;top:8px;margin-left:5px}
+/*****************************************nav***********************************/
+.nav{height:40px;width:100%;background:$navbgcolor}
+.nav ul{margin-left:160px}
+.nav ul li{
+    float:left;
+    a{color:#fff;height:40px;display:inline-block;line-height:40px;padding:0px 15px;font-size:14px;border-radius:20px}
+}
+/********************************banner******************************/
+ .banner{height:532px;width:100%;}
+ .bannerbox{width:1349px;overflow:hidden}
+ .bannerbox ol li{background:$spotcolor;border:1px solid $spotcolor;border-radius:50%}
+ .active{background:$spotcolor2!important}
+ .bannerbox{overflow:hidden;}
+ .left{background:url("../img/left.png") no-repeat center;}
+ .right{background:url("../img/right.png") no-repeat center;}
+ /************************************main*********************************************/
+.main-top{width:100%;height:650px;background:red}
+.shop{background:#F4F4F4;overflow:hidden;padding-bottom:40px}
+.shop1{min-height:450px}
+.shop1 h2{font-weight:normal;font-size:24px;margin:56px 0 40px 10px}
+.shop-list{overflow:hidden}
+.shop-list h4{font-weight:normal;margin:24px;font-size:14px;font-weight:500px}
+.shop-list h6{text-align:center;font-weight:normal;margin-bottom:20px;font-size:16px}
+.shop-list ul li img{width:208px;height:231px}
+.shop-list ul li{float:left;width:208px;height:419px;padding:6px 30px;background:$spotcolor;margin:6px 6px 6px 10px}
+.present{display:inline-block;background:#EB7566;font-size:14px;color:#fff;padding:4px 4px}
+.addPrice{display:inline-block;background:#01C6B8;font-size:14px;color:#fff;padding:4px 4px}
+.subtract{background:#005ba4;display:inline-block;font-size:14px;color:#fff;padding:4px 4px}
+.buy{text-align:center}
+/*************************************tubiao****************************************/
+.icon{width:100%;height:184px;padding:50px 0px;}
+.icon-main h4{font-size:14px;color:#666;font-weight:normal}
+.oul{height:168px;width:100%;padding-top:40px;}
+.icon-main dl{float:left}
+.icon-main dt{width:285px;height:100px;text-align:center}
+.icon-main dd{width:100%;text-align:center;font-size:14px;margin-top:10px}
+/*******************************************footer*****************************************/
+.footer{background:#f3f3f3;border-bottom:1px solid #dfdfdf;border-top:1px solid #dfdfdf;}
+.footer .midd2{overflow: hidden;margin-bottom:40px}
+.footer-link1{width:25%;float:left;}
+.footer-link1 h3{padding:10px 0;margin:20px 0px 10px 0px;color:#78828D}
+.footer-link1 li{font-size:14px;margin-bottom:8px;margin-left:5px;} 
+.footer-link1 li a{color:#78828D}
+.footer-link2{
+    @extend .footer-link1
+}
+.footer-link3{
+    @extend .footer-link1
+}
+.footer-link4{width:25%;float:left;
+    h3{padding:10px 0;margin:20px 0px 10px 0px;color:#78828D};
+  
+}
+.footer-link4  p{margin-top:20px;border-top:1px solid #dfdfdf;
+font-size:14px;height:22px;line-height:22px;
+  a{color:#78828D;}}
+.footer-contact{width:100%;background:#333;padding:10px 0px;text-align:center;
+   p{
+     font-size:18px;color:#fff; 
+       a{color:#69b40f}   
+   }
+   }
+   
+.hidefooter{min-height:85px;}   
+.hide-top{height:62px;background:#F4F4F4;padding-top:23px;position:relative;}
+
+//hide-footer
+.footer-bottom{width:100%;height:342px;padding:40px 45px 30px 45px;background:#333;}
+.footer-bottom a{color:#fff}
+.footer-bottom-link{width:855px;height:342px;float:left}
+.link-cols1{float:left;width:200px;height:342px}
+.link-cols1 div{color:#fff;font-size:12px;font-weight:600}
+.footer-legal{width:359px;height:140px;float:left}
+.link-cols1>ul>li{margin-bottom:20px}
+.link-cols1>ul>li>ul>li{margin:10px 0}
+.link-cols2{
+    @extend .link-cols1;
+}
+.link-cols3{float:left;
+    @extend .link-cols1;
+}
+.link-cols4{
+    @extend .link-cols1;
+}
+.footer-legal p{color:#fff;margin-top:20px}
+.footer-legal ul li{margin:10px 0}
+//hide-top-left
+.hide-top-left{width:65px;height:38px;margin-left:45px;float:left}
+
+.hide-top-left li{width:10px;height:10px;border-radius:50%;background:#333;margin:5px;float:left;}
+.hide-top-middle{width:40px;height:40px;background:url(../img/up-down.png) #fff no-repeat left center;float:left;border:2px solid #fff;border-radius:50%;position:absolute;top:0px;bottom:0px;left:0px;right:0px;margin:auto}
+.hide-top-right{float:right;margin-top:10px;
+    p{font-size:14px;border-right:1px solid #333333;padding:0 10px;float:left;}
+    span{display:inline-block;width:20px;height:18px;float:left;padding:0 45px 0 10px}
+}
