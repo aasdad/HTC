@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*********************************common***************************************/
 * {
   padding: 0px;
@@ -30,7 +31,8 @@ a {
 /**********************************header*****************************/
 .header {
   width: 100%;
-  height: 100px; }
+  height: 100px;
+  position: relative; }
 
 .logo {
   width: 120px;
@@ -45,13 +47,15 @@ a {
 
 .header-nav ul {
   overflow: hidden;
-  margin-top: 59px; }
+  height: 100px; }
 
 .header-nav ul li {
   width: 145px;
   text-align: center;
   float: left;
-  font-size: 12px; }
+  font-size: 12px;
+  padding-top: 59px;
+  padding-bottom: 28px; }
 
 .header-nav ul li:hover {
   color: #a5cf4c;
@@ -63,7 +67,7 @@ a {
   float: right; }
 
 .help-information {
-  width: 220px;
+  width: 270px;
   height: 50px;
   float: right;
   display: table; }
@@ -123,25 +127,48 @@ a {
   top: 8px;
   margin-left: 5px; }
 
+.produce:hover:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 4px 4px 4px;
+  border-color: transparent transparent #a5cf4c transparent;
+  position: relative;
+  top: 0px;
+  margin-left: 5px; }
+
+.produce:hover {
+  background: #F4F4F4; }
+
 /*****************************************nav***********************************/
+.navbox {
+  position: relative;
+  height: 40px;
+  width: 100%; }
+
 .nav {
   height: 40px;
   width: 100%;
-  background: #333; }
+  background: #333;
+  position: absolute;
+  z-index: 20; }
 
-.nav ul {
+.nav .firstUl {
   margin-left: 160px; }
 
-.nav ul li {
+.nav .firstUl > li {
   float: left; }
-  .nav ul li a {
-    color: #fff;
-    height: 40px;
-    display: inline-block;
-    line-height: 40px;
-    padding: 0px 15px;
-    font-size: 14px;
-    border-radius: 20px; }
+
+.nav .firstUl > li > a {
+  color: #fff;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  padding: 0px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  transition: all 1s; }
 
 /********************************banner******************************/
 .banner {
@@ -210,10 +237,12 @@ a {
 .shop-list ul li {
   float: left;
   width: 208px;
-  height: 419px;
+  height: 413px;
   padding: 6px 30px;
   background: #fff;
-  margin: 6px 6px 6px 10px; }
+  margin: 6px 6px 6px 10px;
+  border-top: 6px solid #fff;
+  transition: all 500ms; }
 
 .present {
   display: inline-block;
@@ -337,7 +366,8 @@ a {
   width: 100%;
   height: 342px;
   padding: 40px 45px 30px 45px;
-  background: #333; }
+  background: #333;
+  display: none; }
 
 .footer-bottom a {
   color: #fff; }
@@ -420,5 +450,315 @@ a {
     height: 18px;
     float: left;
     padding: 0 45px 0 10px; }
+
+/**********************************下拉框**************************************/
+.card {
+  position: absolute;
+  width: 100%;
+  height: 315px;
+  background: #F4F4F4;
+  z-index: 21;
+  left: 0px;
+  top: 100px;
+  padding: 0px 75px;
+  display: none; }
+
+.card ul {
+  width: 182px;
+  height: 225px;
+  margin: 30px 5px;
+  padding-top: 30px;
+  float: left; }
+
+.card ul li {
+  height: 50px;
+  width: 182px;
+  text-align: right; }
+
+.card ul li a {
+  font-size: 16px;
+  color: #a5cf4c;
+  font-weight: 600; }
+
+.card dl {
+  float: left;
+  width: 187px;
+  height: 236px;
+  margin-top: 60px;
+  margin-left: 20px; }
+
+.card dt {
+  width: 177px;
+  height: 170px; }
+  .card dt img {
+    width: 177px;
+    height: 170px; }
+
+.card dd {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px; }
+  .card dd p {
+    font-style: oblique;
+    font-weight: normal;
+    color: #a5cf4c; }
+
+/****************************************nav 下拉框**********************************/
+.allphone {
+  position: relative;
+  transition: all 1s; }
+
+.allphoneCard {
+  width: 704px;
+  height: 292px;
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  z-index: 5;
+  background: #fff;
+  padding-left: 20px;
+  display: none; }
+
+.allphoneCard:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: -7px;
+  left: 5px;
+  border-style: solid;
+  border-width: 0px 7px 7px 7px;
+  border-color: transparent transparent #fff transparent; }
+
+.firstLi {
+  width: 683px;
+  height: 34px;
+  font-size: 12px;
+  padding: 10px;
+  line-height: 34px;
+  border-bottom: 1px solid #f4f4f4; }
+
+.firstLi a {
+  color: #CD0A0A !important; }
+
+.secondUl li {
+  float: left;
+  width: 156px;
+  height: 215px; }
+
+.secondUl li span {
+  display: inline-block;
+  width: 156px;
+  height: 173px; }
+
+.secondUl li img {
+  width: 156px;
+  height: 173px; }
+
+.secondUl li p {
+  text-align: left;
+  font-size: 12px;
+  width: 126px;
+  line-height: 20px;
+  padding: 10px 0px 10px 30px;
+  font-weight: 600;
+  position: relative; }
+
+.secondUl li p:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  border-style: solid;
+  border-width: 5px 0px 5px 5px;
+  border-color: transparent  transparent transparent #666666; }
+
+.act {
+  background: #f4f4f4;
+  border-bottom: 1px solid #a5cf4c; }
+
+.secondUl li p:hover {
+  background: #f4f4f4;
+  border-bottom: 1px solid #a5cf4c; }
+
+.allphone {
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  padding: 0px 15px;
+  font-size: 14px;
+  border-radius: 20px; }
+
+.parts {
+  position: relative;
+  border-radius: 20px;
+  transition: all 1s; }
+
+.partLi {
+  width: 510px;
+  height: 34px;
+  font-size: 12px;
+  padding: 10px;
+  line-height: 34px;
+  border-bottom: 1px solid #f4f4f4; }
+
+.partsCard {
+  width: 530px;
+  height: 320px;
+  background: #fff;
+  position: absolute;
+  top: 40px;
+  left: -500px;
+  z-index: 4;
+  padding-left: 20px;
+  display: none; }
+
+.partsCard:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: -7px;
+  left: 520px;
+  border-style: solid;
+  border-width: 0px 7px 7px 7px;
+  border-color: transparent transparent #fff transparent; }
+
+.partLi a {
+  color: #CD0A0A !important; }
+
+.partslist li {
+  width: 163px;
+  height: 243px;
+  float: left;
+  padding: 5px;
+  margin-top: 10px; }
+
+.partslist li span {
+  width: 163px;
+  height: 181px; }
+
+.partslist li img {
+  width: 163px;
+  height: 181px; }
+
+.partslist li p:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  border-style: solid;
+  border-width: 5px 0px 5px 5px;
+  border-color: transparent  transparent transparent #666666; }
+
+.partslist li p {
+  text-align: left;
+  font-size: 12px;
+  width: 108px;
+  line-height: 20px;
+  font-weight: 600;
+  position: relative;
+  padding: 10px 25px 10px 30px; }
+
+/***************************************右悬浮框*********************************/
+.right-fix {
+  width: 48px;
+  height: 364px;
+  position: fixed;
+  right: 0px;
+  top: 10px;
+  z-index: 11;
+  display: none; }
+
+.right-fix li {
+  width: 48px;
+  height: 48px;
+  background: url(../img/bg-dot-black-light.png) repeat;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 48px;
+  position: relative; }
+
+.right-fix li i {
+  font-size: 25px;
+  color: #fff; }
+
+.right-fix li a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px; }
+
+.right-fix li a:hover {
+  background-color: rgba(165, 207, 76, 0.7); }
+
+.gouwucard {
+  position: absolute;
+  width: 0px;
+  height: 70px;
+  background: #fff;
+  z-index: 12;
+  top: 0;
+  right: 50px;
+  overflow: hidden; }
+
+.gouwu:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 15px;
+  z-index: 12;
+  border-style: solid;
+  border-width: 5px 0px 5px 5px;
+  border-color: transparent transparent transparent #a5cf4c; }
+
+.gouwucard p {
+  width: 250px;
+  height: 50px;
+  margin: 0px 25px;
+  border-bottom: 1px solid #F4F4F4;
+  font-size: 12px; }
+
+.totalgoods {
+  float: left;
+  padding-left: 20px; }
+
+.totalgoods b {
+  font-style: normal;
+  color: #a5cf4c;
+  font-size: 16px; }
+
+.totalprice {
+  float: right;
+  padding-right: 20px;
+  margin-top: 2px; }
+
+.totalprice b {
+  font-style: normal; }
+
+.liulanCard {
+  position: absolute;
+  right: 50px;
+  top: 0px;
+  width: 0px;
+  height: 50px;
+  background: #fff;
+  overflow: hidden; }
+
+.liulan:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 15px;
+  border-style: solid;
+  border-width: 5px 0px 5px 5px;
+  border-color: transparent  transparent transparent #a5cf4c; }
+
+.liulanCard p {
+  font-size: 12px; }
 
 /*# sourceMappingURL=shop.css.map */

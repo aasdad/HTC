@@ -4,12 +4,24 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/shop.css">
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css">
 	  <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 	  <script type="text/javascript" src="js/lunbo.js"></script>
 	  <script type="text/javascript" src="js/shop.js"></script>
 	 
 	</head>
 	<body>
+	    <!--右悬浮框-->
+		   <ul class="right-fix">
+		   	  <li class="gouwu"><a title="购物车" href="#"><i class="iconfont icon-gouwuche"></i></a><div class="gouwucard"><p><span class="totalgoods">总计<b>0</b>件商品</span><span class="totalprice">合计：￥<b>0.00</b>元</span></p></div></li>
+		   	  <li class="love"><a title="收藏" href="#"><i class="iconfont icon-xihuan"></i></a></li>
+		   	  <li class="liulan"><a title="浏览记录" href="#"><i class="iconfont icon-liulanlishi"></i></a><div class="liulanCard"><p>你的浏览记录为空！</p></div></li>
+		   	  <li class="kefu"><a title="客服" href="#"><i class="iconfont icon-kefu"></i></a></li>
+		   	  <li class="diaocha"><a title="调查报告" href="#"><i class="iconfont icon-wenjuandiaocha"></i></a></li>
+		   	  <li class="backtop"><a title="返回顶部" href="#"><i class="iconfont icon-uptop"></i></a></li>
+		   </ul>
+		
+		<!--header-->
 		<div class="header">
 			<div class="midd">
 			<div class="logo"><a href="#"></a></div>
@@ -31,6 +43,8 @@
 					<li>帮助中心</li>
 					<li><div></div></li>
 					<li>售后服务</li>
+					<li><div></div></li>
+					<li><i></i>购物车</li>
 					</ul>
 				</div>
 				<div class="search">
@@ -39,19 +53,76 @@
 				</div>
 			</div>
 			</div>
+			
+			
+					<div class="card">
+			  <div class="midd2">
+				<ul>
+					<li><a href="#">智能手机</a></li>
+					<li><a href="#">相机</a></li>
+					<li><a href="#">vive</a></li>
+					<li><a href="#">配件</a></li>
+				</ul>
+				
+					<dl>
+						<dt><img src="img/buy11.png"></dt>
+						<dd>HTC One X9<p>靠谱才出众</p></dd>
+					</dl>
+					<dl>
+						<dt><img src="img/buy12.png"></dt>
+						<dd>HTC U 双屏 全网通<p>大热爱，小自然</p></dd>
+					</dl>
+					<dl>
+						<dt><img src="img/buy10.png"></dt>
+						<dd>HTC Desire 10 pro 全网通双卡双待<p>就是玩会儿</p></dd>
+					</dl>
+					<dl>
+						<dt><img src="img/buy9.png"></dt>
+						<dd>HTC One A9<p>不从众，才出众</p></dd>
+					</dl>
+				
+			</div>
+		  </div>	
 		</div>
 		<!--nav-->
+	 <div class="navbox">	
 		<div class="nav">
 			<div class="midd">
-				<ul>
+				<ul class="firstUl">
 					<li><a href="#">首页</a></li>
 					<li><a href="#">逢双必杀</a></li>
 					<li><a href="#">幸运大抽奖</a></li>
-					<li><a href="#">全部手机</a></li>
-					<li><a href="#">配件</a></li>
+					<li class="allphone"><a href="#">全部手机</a>
+						<ul class="allphoneCard">
+							<li class="firstLi"><a href="#">查看更多商品</a></li>
+							<li>
+								<ul class="secondUl">
+									<li><a href="#"><span><img src="img/buy14.png"></span><p>HTC 10</p></a></li>
+									<li><a href="#"><span><img src="img/buy15.png"></span><p>HTC Desire 10 pro </p></a></li>
+									<li><a href="#"><span><img src="img/buy16.png"></span><p>HTC One X9</p></a></li>
+									<li><a href="#"><span><img src="img/buy13.png"></span><p>HTC One A9</p></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="parts"><a href="#">配件</a>
+						<ul class="partsCard">
+							<li class="partLi"><a href="#">查看更多配件</a></li>
+							<li>
+								<ul class="partslist">
+									<li><a href="#"><span><img src="img/p1.png"><span><p>冰感智能立显保护套</p></a></li>
+									<li><a href="#"><span><img src="img/p2.png"><span><p>Quick Charge3.0充电器</p></a></li>
+									<li><a href="#"><span><img src="img/p3.png"><span><p>X9第二代智能立显保护套</p></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
 					<li><a href="#">HTC 如影(Re)</a></li>
 				</ul>
 			</div>
+			
+	
+	  </div>		
 		</div>
 		
 		<!--lunbo-->
@@ -89,6 +160,7 @@
         	<div class="main-top">
         		<div class="midd2"></div>
         	</div>
+        <!--shop	-->
         	<div class="shop">
         		<div class="midd2">
         		 <div class="shop1">
@@ -346,7 +418,8 @@
       	  	   	 <p>沪ICP备10214397号-8 中国</p><span><img src="img/globe_nbg.png"></span>
       	  	   </div>
       	  </div>
-      	   <div class="footer-bottom f12">
+      	  
+      	 <div class="footer-bottom f12" >
          <div class="footer-bottom-link">
          	  	 <div class="link-cols1">
          	  	 	<ul>
