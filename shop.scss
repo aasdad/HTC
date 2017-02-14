@@ -63,7 +63,7 @@ a{color:#000}
  .left{background:url("../img/left.png") no-repeat center;}
  .right{background:url("../img/right.png") no-repeat center;}
  /************************************main*********************************************/
-.main-top{width:100%;height:650px;background:red}
+
 .shop{background:#F4F4F4;overflow:hidden;padding-bottom:40px}
 .shop1{min-height:450px}
 .shop1 h2{font-weight:normal;font-size:24px;margin:56px 0 40px 10px}
@@ -84,6 +84,58 @@ a{color:#000}
 .addPrice{display:inline-block;background:#01C6B8;font-size:14px;color:#fff;padding:4px 4px}
 .subtract{background:#005ba4;display:inline-block;font-size:14px;color:#fff;padding:4px 4px}
 .buy{text-align:center}
+.shop2{height:401px}
+.shop2 h2{font-weight:normal;font-size:24px;margin:56px 0 40px 10px}
+.shop-list2 .list2-Li{position:relative;float:left;width:238px;height:343px;padding:6px 30px 6px 0px;background:$spotcolor;margin:6px 6px 6px 10px;transition:all 500ms;overflow:hidden;}
+.shop-list2 .recomment{display:inline-block;width:238px;height:242px;position:relative;}
+.recomment img{position:absolute;left:10px;top:0;}
+.wenzi{display:inline-block;position:absolute;right:-120px;top:0px;width:120px;height:200px;background:rgba(0,0,0,0.3)}
+.wenzi p{color:#fff;margin:20px 0;text-align:center;font-weight:600}
+.wenzi ul li{color:#fff;font-size:12px;margin-top:10px;text-align:center}
+.buybutton{position:absolute;bottom:30px;left:268px;width:208px;height:40px;background:rgba(0,0,0,0.3);padding:5px 30px;}
+.buybutton1{display:inline-block;width:90px;height:40px;border:1px solid #f4f4f4;text-align:center;line-height:40px;margin:0 5px;box-shadow:0px 0px 2px #8AE234;}
+.buybutton2{display:inline-block;width:90px;height:40px;border:1px solid #f4f4f4;text-align:center;line-height:40px;margin:0 5px}
+.list2-Li-bottom{position:absolute;bottom:20px;width:208px;}
+.list2-Li:hover{animation:mybox 4s  ease-in-out infinite alternate;}
+@keyframes mybox{
+    0%{background:#fff}
+    20%{background:#e8800f}
+    50%{background:#ec451f}
+    70%{background:#e8800f}
+    100%{background:#fff}
+// 0%{background:rgba(0,0,0,0.3)}
+// 100%{background:rgba(0,0,0,0.3)}
+}
+.list2-Li-bottom .buyprice{font-size:14px;text-align:center}
+.pricemoney{text-align:center;color:red}
+/*****************************************科技*************************************************/
+.main-top{width:100%;height:630px;border:1px solid #f4f4f4}
+.keji h2{font-weight:normal;font-size:24px;margin:56px 0 40px 10px;position:relative}
+.kejibox{width:100%;height:527px;}
+.kejibox-left{width:500px;height:527px;float:left;}
+.kejibox-right{width:618px;height:527px;float:left;}
+.kejibox .ul1{float:left;height:180px;width:620px;
+      li{float:left;width:290px;height:180px;margin-left:20px;position:relative;overflow:hidden;
+         img{width:290px;height:180px;}
+         }
+}            
+.kejibox .ul2{float:left;width:620px;;height:347px;margin-top:20px;
+        li{float:left;width:290px;height:280px;margin-left:20px;position:relative;overflow:hidden;
+         img{width:290px;height:280px;}
+         }
+     }
+.miusic{width:500px;height:300px;border:1px solid #eee;float:left}
+.miusic img{width:500px;height:300px}
+.ul1-shadow{position:absolute;left:0px;top:180px;display:inline-block;width:290px;height:170px;background:rgba(0,0,0,0.4);padding-top:10px;}
+.ul1-shadow p{color:#fff;text-align:center;margin-top:10px}
+.ul1-shadow  .p1{font-size:20px}
+.ul1-shadow  .btn{width:100px;height:20px;border:2px solid #f4f4f4;box-shadow:0px 0px 5px #DADADA;margin-left:90px}
+.ul2-shadow{position:absolute;left:0;top:280;display:inline-block;width:290px;height:270px;background:rgba(0,0,0,0.4);padding-top:10px}
+.ul2-shadow p{color:#fff;text-align:center;margin-top:30px}
+.ul2-shadow  .p1{font-size:20px}
+.ul2-shadow  .btn{width:100px;height:20px;border:2px solid #f4f4f4;box-shadow:0px 0px 5px #DADADA;margin-left:90px}
+.keji h2 span{position:absolute;left:100px;top:-14px;display:inline-block;width:100px;height:60px;border-radius:50px;background:url(../img/20150102091625810.jpg) no-repeat center;background-size:cover}
+.video{width:500px;height:179px;float:left;position:relative;left:0px;top:0px}
 /*************************************tubiao****************************************/
 .icon{width:100%;height:184px;padding:50px 0px;}
 .icon-main h4{font-size:14px;color:#666;font-weight:normal}
@@ -187,7 +239,7 @@ font-size:14px;height:22px;line-height:22px;
 .partslist li p:before{content:"";display:inline-block;position:absolute;left:10px;top:15px;border-style:solid;border-width:5px 0px 5px 5px;border-color:transparent  transparent transparent #666666;}
 .partslist li p{text-align:left;font-size:12px;width:108px;line-height:20px;font-weight:600;position:relative;padding:10px 25px 10px 30px;}
 /***************************************右悬浮框*********************************/
-.right-fix{width:48px;height:364px;position:fixed;right:0px;top:10px;z-index:11;display:none}
+.right-fix{width:48px;height:364px;position:fixed;right:0px;top:42px;z-index:11;display:none}
 .right-fix li{width:48px;height:48px;background:url(../img/bg-dot-black-light.png) repeat;margin-bottom:5px;border-radius:5px;text-align:center;line-height:48px;position:relative;}
 .right-fix li i{font-size:25px;color:#fff}
 .right-fix li a{display:inline-block;width:48px;height:48px;border-radius:5px;}

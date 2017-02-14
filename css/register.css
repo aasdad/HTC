@@ -26,6 +26,27 @@ a {
 :root {
   background: #f4f6f8; }
 
+.yanze {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  background: #a5cf4c;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-top: 6px;
+  text-align: center;
+  line-height: 40px;
+  color: #CD0A0A; }
+
+.right {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #CD0A0A;
+  text-align: center;
+  line-height: 55px;
+  font-size: 40px !important; }
+
 /**************************main****************************/
 .box {
   width: 650px;
@@ -59,7 +80,31 @@ a {
   height: 53px; }
 
 #form-email {
-  margin: 0px; }
+  margin: 0px;
+  width: 600px;
+  overflow: hidden; }
+
+#form-password {
+  width: 600px; }
+
+.form-check {
+  width: 600px; }
+
+.email {
+  text-indent: 14px;
+  float: left; }
+
+.password {
+  text-indent: 14px; }
+
+#name, .form #xing {
+  text-indent: 14px; }
+
+#xing {
+  text-indent: 14px; }
+
+#write {
+  text-indent: 14px; }
 
 .teleText {
   height: 30px;

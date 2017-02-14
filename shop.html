@@ -5,8 +5,15 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/shop.css">
 		<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/mplayer.css">
 	  <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 	  <script type="text/javascript" src="js/lunbo.js"></script>
+	  <script type="text/javascript" src="js/shadow.js"></script>
+	  
+	  <script src="js/mplayer.js"></script>
+      <script src="js/mplayer-list.js"></script>
+      <script src="js/mplayer-functions.js"></script>
+       <script src="http://cdn.bootcss.com/jquery-nstslider/1.0.13/jquery.nstSlider.min.js"></script>
 	  <script type="text/javascript" src="js/shop.js"></script>
 	 
 	</head>
@@ -158,8 +165,99 @@
    <!--  main-->
         <div class="main">
         	<div class="main-top">
-        		<div class="midd2"></div>
+        		<div class="midd2">
+        		  <div class="keji">	
+        			  <h2>科技众筹<span></span></h2>
+        			      <div class="kejibox">
+        			          <div class="kejibox-left">
+        			          	    <div class="miusic"><img src="img/yinyue.jpg"></div>
+        				   <div class="video">
+                       <script type="text/plain" id="music">
+						         <div class="mp">
+							   <div class="mp-box">
+								<img src="img/mplayer_error.png" alt="music cover" class="mp-cover">
+								<div class="mp-info">
+									<p class="mp-name">燕归巢</p>
+									<p class="mp-singer">许嵩</p>
+									<p><span class="mp-time-current">00:00</span>/<span class="mp-time-all">00:00</span></p>
+								</div>
+								<div class="mp-btn">
+									<button class="mp-prev" title="上一首"></button>
+									<button class="mp-pause" title="播放"></button>
+									<button class="mp-next" title="下一首"></button>
+									<button class="mp-mode" title="播放模式"></button>
+									<div class="mp-vol">
+										<button class="mp-vol-img" title="静音"></button>
+										<div class="mp-vol-range" data-range_min="0" data-range_max="100" data-cur_min="80">
+											<div class="mp-vol-current"></div>
+											<div class="mp-vol-circle"></div>
+										</div>
+									</div>
+								</div>
+								<div class="mp-pro">
+									<div class="mp-pro-current"></div>
+								</div>
+								
+							</div>
+							
+							<div class="mp-list-box">
+								<ul class="mp-list-title"></ul>
+								<table class="mp-list-table">
+									<thead>
+										<tr>
+											<th>歌名</th>
+											<th>歌手</th>
+											<th>时长</th>
+										</tr>
+									</thead>
+									<tbody class="mp-list"></tbody>
+								</table>
+							</div>
+						</div>
+        	      </script>
+        				           </div>
+        			          </div>
+        				 	  <div class="kejibox-right">
+        				 	  	   <ul class="ul1">
+        				   	      <li><a href="#"><img src="img/z1.jpg"><span class="ul1-shadow">
+        				   	     	<p class="p1">VPAN 无线U盘影音无限</p>
+        				   	     	<p> 已筹到<span>XXX</span>元</p>
+        				   	     	<p>此项目必须在 2016年03月3日 前得到 ￥300000的支持才可成功！ 剩余 19 天！</p>
+        				   	     	<p class="btn">点击参与众筹</p>
+        				   	     </span></a></li>
+        				   	     <li><a href="#"><img src="img/z3.jpg"><span class="ul1-shadow">
+        				   	     	<p class="p1">智能分体手环</p>
+        				   	     	<p> 已筹到<span>XXX</span>元</p>
+        				   	     	<p>此项目必须在 2017年02月25日 前得到 ￥100000的支持才可成功！ 剩余 11天!</p>
+        				   	     	<p class="btn">点击参与众筹</p>
+        				   	     </span></a></li>
+        				         </ul>
+        				         <ul class="ul2">
+        				           <li ><a href="#"><img src="img/z2.png">
+        				               <span class="ul2-shadow">
+        				   	     	  <p class="p1">海尔智能家居网关·小悦</p>
+        				   	       	<p> 已筹到<span>XXX</span>元</p>
+        				   	     	<p>此项目必须在 2016年03月3日 前得到 ￥300000的支持才可成功！ 剩余 19 天！</p>
+        				   	     	<p class="btn">点击参与众筹</p>
+        				   	     </span>
+        				           </a></li>
+        				   	       <li><a href="#"><img src="img/z4.jpg">
+        				   	          <span class="ul2-shadow">
+        				   	     	 <p class="p1">Equil智能板书系统</p>
+        				   	       	<p> 已筹到<span>XXX</span>元</p>
+        				   	     	<p>此项目必须在 2016年03月3日 前得到 ￥300000的支持才可成功！ 剩余 19 天！</p>
+        				   	     	<p class="btn">点击参与众筹</p>
+        				   	     </span>
+        				   	       
+        				   	       </a></li>
+        				         </ul>
+        				 	  </div>
+        			      	
+        			   </div>
+        		  </div>		
+        		</div>
         	</div>
+       
         <!--shop	-->
         	<div class="shop">
         		<div class="midd2">
@@ -268,57 +366,93 @@
         		</div>
         			
         		
-        		  <div class="shop1">
+        		  <div class="shop2">
         			<h2>更多值得买</h2>
-        			<div class="shop-list">
+        			<div class="shop-list2">
         				<ul>
-        					<li>
-        						<a href="#">
-        						<img src="img/show1.png">
+        					<li class="list2-Li">
+        					  <a href="#">
+        					  	<span class="buybutton">
+        					  		<span class="buybutton1" href="#">立即购买</span><span class="buybutton2" >查看详情</span>
+        					  	</span>
+        					  	<span class="wenzi">
+        					  		<p>HTC One ME 4G</p>
+        					  		 <ul>
+        					  		 	<li>移动定制版 (双卡双待)</li>
+        					  			<li>电信三网通</li>
+        					  			<li> 5.0英寸HD屏</li>
+        					  			<li>智能实时美颜</li>
+        					  		</ul>
+        					  	</span>
+        						<span class="recomment"><img src="img/show1.png"></span>
+        						 <div class="list2-Li-bottom"><p class="buyprice">HTC Desire 10 pro 移动联通电信六模全网通  双卡双待</p>
+        						 	<p class="pricemoney">￥2000</p>
+        						 </div>
         					  </a>
-        					 <h4>HTC Desire 10 pro 移动联通电信六模全网通  双卡双待</h4>
-        					 <h6>￥2000</h6>
-        					 <div class="buy">
-        					 	<span class="present">赠品</span>
-        					 	<span class="addPrice">加价购</span>
-        					 	<span class="subtract">下单立减600</span>
-        					 </div>
+        					 
         					</li>
-        					<li>
-        						<a href="#">
-        						<img src="img/show1.png">
+        					<li class="list2-Li">
+        					  <a href="#">
+        					  	<span class="buybutton">
+        					  		<span class="buybutton1" href="#">立即购买</span><span class="buybutton2" >查看详情</span>
+        					  	</span>
+        					  	<span class="wenzi">
+        					  		<p>HTC One ME 4G</p>
+        					  		 <ul>
+        					  		 	<li>移动定制版 (双卡双待)</li>
+        					  			<li>电信三网通</li>
+        					  			<li> 5.0英寸HD屏</li>
+        					  			<li>智能实时美颜</li>
+        					  		</ul>
+        					  	</span>
+        						<span class="recomment"><img src="img/show1.png"></span>
+        						 <div class="list2-Li-bottom"><p class="buyprice">HTC Desire 10 pro 移动联通电信六模全网通  双卡双待</p>
+        						 	<p class="pricemoney">￥2000</p>
+        						 </div>
         					  </a>
-        					 <h4>HTC Desire 10 pro 移动联通电信六模全网通  双卡双待</h4>
-        					 <h6>￥2000</h6>
-        					 <div class="buy">
-        					 	<span class="present">赠品</span>
-        					 	<span class="addPrice">加价购</span>
-        					 	<span class="subtract">下单立减600</span>
-        					 </div>
+        					 
         					</li>
-        					<li>
-        						<a href="#">
-        						<img src="img/show1.png">
+        					<li class="list2-Li">
+        					  <a href="#">
+        					  	<span class="buybutton">
+        					  		<span class="buybutton1" href="#">立即购买</span><span class="buybutton2" >查看详情</span>
+        					  	</span>
+        					  	<span class="wenzi">
+        					  		<p>HTC One ME 4G</p>
+        					  		 <ul>
+        					  		 	<li>移动定制版 (双卡双待)</li>
+        					  			<li>电信三网通</li>
+        					  			<li> 5.0英寸HD屏</li>
+        					  			<li>智能实时美颜</li>
+        					  		</ul>
+        					  	</span>
+        						<span class="recomment"><img src="img/show1.png"></span>
+        						 <div class="list2-Li-bottom"><p class="buyprice">HTC Desire 10 pro 移动联通电信六模全网通  双卡双待</p>
+        						 	<p class="pricemoney">￥2000</p>
+        						 </div>
         					  </a>
-        					 <h4>HTC Desire 10 pro 移动联通电信六模全网通  双卡双待</h4>
-        					 <h6>￥2000</h6>
-        					 <div class="buy">
-        					 	<span class="present">赠品</span>
-        					 	<span class="addPrice">加价购</span>
-        					 	<span class="subtract">下单立减600</span>
-        					 </div>
+        					 
         					</li>
-        					<li>
-        						<a href="#">
-        						<img src="img/show1.png">
+        					<li class="list2-Li">
+        					  <a href="#">
+        					  	<span class="buybutton">
+        					  		<span class="buybutton1" href="#">立即购买</span><span class="buybutton2" >查看详情</span>
+        					  	</span>
+        					  	<span class="wenzi">
+        					  		<p>HTC One ME 4G</p>
+        					  		 <ul>
+        					  		 	<li>移动定制版 (双卡双待)</li>
+        					  			<li>电信三网通</li>
+        					  			<li> 5.0英寸HD屏</li>
+        					  			<li>智能实时美颜</li>
+        					  		</ul>
+        					  	</span>
+        						<span class="recomment"><img src="img/show1.png"></span>
+        						 <div class="list2-Li-bottom"><p class="buyprice">HTC Desire 10 pro 移动联通电信六模全网通  双卡双待</p>
+        						 	<p class="pricemoney">￥2000</p>
+        						 </div>
         					  </a>
-        					 <h4>HTC Desire 10 pro 移动联通电信六模全网通  双卡双待</h4>
-        					 <h6>￥2000</h6>
-        					 <div class="buy">
-        					 	<span class="present">赠品</span>
-        					 	<span class="addPrice">加价购</span>
-        					 	<span class="subtract">下单立减600</span>
-        					 </div>
+        					 
         					</li>
         		 
         				</ul>

@@ -25,6 +25,8 @@ a{text-decoration:none;}
 a{color:#000}
 .active{background:#333;color:#fff}
 :root{background:#f4f6f8;}
+.yanze{display:inline-block;width:100px;height:40px;background:#a5cf4c;border-radius:20px;margin-left:20px;margin-top:6px;text-align:center;line-height:40px;color:#CD0A0A}
+.right{display:inline-block;width:40px;height:40px;color:#CD0A0A;text-align:center;line-height:55px;font-size:40px!important}
 /**************************main****************************/
 
 .box{width:650px;margin:0 auto;}
@@ -34,7 +36,14 @@ a{color:#000}
 .logo img{width:150px;height:35px}
 .top-logo p{text-align:center;font-size:20px;color:#b6c1d3;}
 .select{height:53px}
-#form-email{margin:0px;}
+#form-email{margin:0px;width:600px;overflow: hidden;}
+#form-password{width:600px}
+.form-check{width:600px}
+.email{text-indent:14px;float:left}
+.password{text-indent:14px}
+#name{text-indent:14px}
+#xing{text-indent:14px}
+#write{text-indent:14px}
 .teleText{height:30px;line-height:30px;text-align:right;color:#b6c1d3}
 .line-left{margin-left:10px}
 .line-left,.line-right{width:180px;border:1px solid #b6c1d3;float:left}
