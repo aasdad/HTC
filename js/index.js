@@ -80,5 +80,20 @@ $(function(){
     	$(this).stop(true).slideUp("slow")
     	$(".produce").css({"background":"#FFF","color":"#000"})
     })
+     
+     //广告
+     
+     $("#top-adver-span2").click(function(){
+     	 $("#top-advertise").animate({"height":"0"},"slow",function(){
+     	 	$("#top-advertise").css("display","none")
+     	 });
+     	 
+     })
+     
+     setTimeout(function(){
+     	 $("#top-advertise").animate({"height":"0"},"slow",function(){
+     	 	$("#top-advertise").css("display","none")
+     	 });
+     },10000)
     
 })

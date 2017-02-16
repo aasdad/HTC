@@ -567,4 +567,28 @@ a {
     font-weight: normal;
     color: #a5cf4c; }
 
+/*****************************************advertise****************************************/
+#top-advertise {
+  width: 100%;
+  height: 500px;
+  position: relative; }
+
+.advertise {
+  width: 100%;
+  height: 500px; }
+
+.advertise {
+  background: #000; }
+
+#top-adver-span2 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer; }
+
 /*# sourceMappingURL=index.css.map */
