@@ -208,5 +208,27 @@ setEffects(player);
   //影音
    $(".kejibox-right li").hoverdir();
    
+  //cookiedenglu
+  
+   if($.cookie("user")){
+   	        $(".login1").empty();
+   	   var vip=JSON.parse($.cookie("user"));
+ 	 		$(".login1").html('你好!'+vip.email+',<span class="login2">退出!</span>')
+ 	 		$(".login2").css({"color":"#fff","cursor":"pointer","font-size":"14px"})
+   	
+   	
+   }
+   
+   $(".login2").click(function(){
+   	$.cookie("user",JSON.stringify(vip),{expires:-1,path:'/'});
+   	location.reload(true);
+   })
+   
+  /* 商品列表*/
+  
+      $.get("http://localhost/shop1.php",function(data){
+      	 console.log(data);
+      })
+   
    
 })

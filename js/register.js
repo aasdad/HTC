@@ -44,12 +44,25 @@ $(function(){
    
      $(".email").blur(function(){
        var reg= /^\w+@((126|139|163)\.(com|cn))|(qq\.com)$/i;
-          
+
      	 if(reg.test( $(".email").val())){
-     	 	    $("#form-email span").addClass("right").addClass("iconfont icon-duihao");
-     	 	  //$("#form-email span").css({"display":"inline-block","width":"120px","height":"30px","background":"#a5cf4c","border-rdius":"20px"}) 
+     	 	
+     	 	 $.get("http://localhost/regsiter.php",
+             {"userEmail":$(".email").val()},function(data){
+       	  if(data.indexOf("1")>-1){
+       	  	  
+       	 	    $("#form-email span").addClass("right").addClass("iconfont icon-duihao");
+       	 	    $(".email")[0].name="1";
+       	  }else{
+       	  	console.log(data)
+       	  	   $("#form-email span").addClass("yanze").html("已有人使用了");
+       	   }
+       });
+     	 	  
+     	 	  
      	 }else{
-     	 	  $("#form-email span").addClass("yanze").html("格式不正确");
+     	 	 $("#form-email span").addClass("yanze").html("格式不正确");
+     	 	 $(".email")[0].name="0";
      	 }
      	
      })
@@ -65,14 +78,19 @@ $(function(){
     	var reg1=/^((\w)|([\.\?])){7,9}$/;
     	var reg2=/^((\w)|([\.\?])){10,16}$/;
     	if(reg.test($(".password").val())){
-    		$(".strong1").css("background","#FBCA93")
+    		$(".strong1").css("background","#FBCA93");
+    		
+    		 $(".password")[0].name="1";
     	}else if(reg1.test($(".password").val())){
-    		$(".strong2").css("background","orange")
+    		$(".strong2").css("background","orange");
+    		 $(".password")[0].name="1";
     	}else if(reg2.test($(".password").val())){
-    		$(".strong3").css("background","#CD0A0A")
+    		$(".strong3").css("background","#CD0A0A");
+    		 $(".password")[0].name="1";
     	}else{
     		  $(".passtext").css("display","block")
-    		$(".passtext").html("不合法")
+    		 $(".passtext").html("不合法")
+    		  $(".password")[0].name="0";
     	}
     	
     	
@@ -148,16 +166,23 @@ $(function(){
       
        
 	/*连接后台*/
+	
 	 $(".submit").click(function(){
-	    $.post("http://localhost/register.php",{"userName":$(".email").val(),"userPass":$(".password").val()},function(data){
-		 if(data.indexOf("1")>-1){
-		 	console.log(Data);
-		 	  alert("成功")
+	    if($(".email")[0].name==$(".password")[0].name){
+	       $.post("http://localhost/regsiter.php",{"userEmail":$(".email").val(),"userPass":$(".password").val(),"userName":$("#name").val()},function(data){
+		    if(data.indexOf("1")>-1){
+		 	console.log(data)
+              location.href="login.html";
 		 }else{
-		      alert("失败")	
+		       alert('失败');
+		      location.reload(true);
 		 }
 		 
-	})
+	   })
+	       
+	    }else{
+	     	alert("不能为空")
+	     }
 	    
 	})    
 	

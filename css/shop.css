@@ -67,7 +67,7 @@ a {
   float: right; }
 
 .help-information {
-  width: 270px;
+  width: 350px;
   height: 50px;
   float: right;
   display: table; }
@@ -78,7 +78,7 @@ a {
   vertical-align: middle; }
 
 .help-information li {
-  float: left;
+  float: right;
   color: #A5CF4C;
   margin: 0 5px;
   font-size: 12px;
@@ -155,7 +155,8 @@ a {
   z-index: 20; }
 
 .nav .firstUl {
-  margin-left: 160px; }
+  margin-left: 160px;
+  overflow: hidden; }
 
 .nav .firstUl > li {
   float: left; }
@@ -169,6 +170,21 @@ a {
   font-size: 14px;
   border-radius: 20px;
   transition: all 1s; }
+
+.login {
+  float: right;
+  height: 100%; }
+
+.login span {
+  height: 40px;
+  line-height: 40px; }
+
+.login span a {
+  color: #fff; }
+
+.login1 {
+  color: #fff;
+  font-size: 14px; }
 
 /********************************banner******************************/
 .banner {
